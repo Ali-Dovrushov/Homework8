@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Дополнительное_Задание
+namespace Question1
 {
     class Person
     {
