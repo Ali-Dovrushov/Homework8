@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Globalization;
-
 
 namespace Question2
 {
@@ -68,17 +66,6 @@ namespace Question2
         }
     }
 
-
-
-
-
-
-
-
-
-
-
-
     class Individual : Scet
     {
         public byte vidSceta { get; set; }
@@ -124,7 +111,6 @@ namespace Question2
             }
         }
 
-
         public void Withdraw()
         {
             bool checkerForSum = true;
@@ -162,17 +148,6 @@ namespace Question2
         }
     }
 
-
-
-
-
-
-
-
-
-
-
-
     class Legal : Scet
     {
         public override void AccountOpenDate()
@@ -200,17 +175,6 @@ namespace Question2
 
         }
     }
-
-
-
-
-
-
-
-
-
-
-
 
     class Program
     {
@@ -322,7 +286,6 @@ namespace Question2
                             bool selectionForSwitch2 = true;
                             do
                             {
-
                                 individual.Menu();
                                 byte individualChoice = NumberCheckerForSwitch();
                                 switch (individualChoice)
