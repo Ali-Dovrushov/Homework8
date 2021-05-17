@@ -64,7 +64,7 @@ namespace Дополнительное_Задание
             Console.WriteLine("\n\n\n");
         }
 
-        public static string PersonName()
+        public static string CheckerSurname()
         {
             do
             {
@@ -87,6 +87,12 @@ namespace Дополнительное_Задание
                 }
 
                 NameForCompare = personName;
+
+                if (NameForCompare.Length < 3)
+                {
+                    Console.Write("Name cannot be less than 2 letters or empty result\nEnter surname: ");
+                    checkerName = false;
+                }
             }
             while (checkerName == false);
 
@@ -207,7 +213,7 @@ namespace Дополнительное_Задание
                         case 1:
                             {
                                 Console.Write("Enter surname: ");
-                                string studentSurname = PersonName();
+                                string studentSurname = CheckerSurname();
 
                                 Console.Write("Enter course: ");
                                 byte studentCourse = NumberCheckerForCourse();
@@ -225,7 +231,7 @@ namespace Дополнительное_Задание
                         case 2:
                             {
                                 Console.Write("Enter surname: ");
-                                string aspirantSurname = PersonName();
+                                string aspirantSurname = CheckerSurname();
 
                                 Console.Write("Enter course: ");
                                 byte aspirantCourse = NumberCheckerForCourse();
